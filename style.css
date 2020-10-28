@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+header{
+    height: 100px;
+    /* background-color: green; */
+}
+
+.container{
+    margin: 0 auto;
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right,
+.left{
+    /* background-color: red; */
+    /* width: 400px; */
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.right>div,
+.left>div{
+    display: inline-block;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.right>div:hover{
+    color: rgba(0, 0, 0, .9);
+    cursor: pointer;
+}
+.left>div:hover{
+    color: rgba(0, 0, 0, .9);
+    cursor: pointer;
+}
+
+.left img{
+    width: 55px;
+}
+
+.right>div>div{
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    display: none;
+}
+
+.right>div>div.active{
+    display: block;
+}
+
+a{
+    display: block;
+    padding: 20px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+}
+
+a:hover{
+    color: rgba(0, 0, 0, .9);
+}
+
+button{
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+
+.scarica>button{
+    background-color: #191c1f;
+    color: white;
+}
+
+.personale>p{
+    color: black;
+}
+
+.funzionalita>div{
+    width: 1100px;
+}
+
+.funzionalita>div>div{
+    width: calc(100% / 4);
+    display: inline-block;
+    /* background-color: red; */
+    float: left;
+}
+
+.funzionalita>div>div>div{
+    padding: 20px;
+    color: gray;
+    opacity: .7;
+}
+
+span:last-child{
+    position: relative;
+    top: 4px;
+    font-size: 12px;
+}
+
+.rad{
+    display: inline-block;
+    background-color: gray;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+i{
+    color: white;
+    position: relative;
+    top: 4px;
+}
+
+#prossimamente{
+    color: gray;
+    opacity: .5;
+    position: relative;
+}
+
+#prossimamente::before{
+    content: "PROSSIMAMENTE";
+    position: absolute;
+    color: blue;
+    opacity: 1;
+    font-size: 10px;
+    top: 8px;
+    right: 20px;
+}
